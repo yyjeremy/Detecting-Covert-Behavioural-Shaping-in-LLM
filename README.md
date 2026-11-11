@@ -1,12 +1,11 @@
-# Detecting Covert Behavioural Shaping in Language Models
+# Recorded feasibility demonstration
 
-This technical demonstration compares saved answers to fictional incidents. Open
-index.html in a browser. The page includes the evidence, original answers,
-review labels, paired results, and a download of the 48 records.
+Protocol: din-v2-20261111-c512
 
-The site is self-contained and can be served from the root of a static hosting
-directory. It uses no model server, API, GPU, or external assets.
+Open index.html directly, or from this directory run:
 
-The reported results describe eight fictional test scenarios and one frozen
-model configuration. They do not establish automated detection accuracy or
-performance on operational material.
+    python3 -m http.server 8765 --bind 127.0.0.1
+
+Then open http://127.0.0.1:8765/ . Stop the server with Ctrl-C. No GPU or internet connection is needed.
+
+This package contains a recorded feasibility demonstration. Results underwent two independent review passes.
